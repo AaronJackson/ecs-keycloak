@@ -5,7 +5,6 @@ ENV KC_DB=postgres
 ENV KC_HOSTNAME=localhost
 ENV KC_HEALTH_ENABLED=true
 
-COPY --from=otp-build /otp-email/target/keycloak-2fa-email-authenticator*.jar /opt/keycloak/providers/
 RUN /opt/keycloak/bin/kc.sh build
 
 WORKDIR /opt/keycloak
