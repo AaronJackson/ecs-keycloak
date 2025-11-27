@@ -12,7 +12,7 @@ variable "region" {
 
 variable "keycloak-image" {
   type        = string
-  default     = "ghcr.io/hic-infra/ecs-keycloak:2.2.1"
+  default     = "ghcr.io/hic-infra/ecs-keycloak:otp-email"
   description = "Keycloak image including registry"
 }
 
