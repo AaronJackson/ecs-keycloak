@@ -103,7 +103,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./container
-          file: Dockerfile.eotp
+          file: ./container/Dockerfile.eotp
           platforms: ${{ env.PLATFORMS }}
           push: >
             ${{ github.ref == format('refs/heads/{0}', env.PUBLISH_BRANCH) ||
